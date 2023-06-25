@@ -3,37 +3,67 @@
     <head>
         <meta charset="UTF-8">
         <title>PhotoShop</title>
-        <!-- <link rel="stylesheet" href="css/style.css"> -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     </head>
+
     <body>
-        <header>
-            <h1>PhotoShop</h1>
-        </header>
-        <div class="main">
-            <img src="img/mainvisual.jpg" alt="mainvisual">
-            <h2>INDEX</h2>
-            <ul>
-                <li>1.</li>
-                <li>2.</li>
-                <li>3.</li>
-                <li>4.</li>
-                <li>5.</li>
-            </ul>
-            <div id="details">
-                <img src="img/detail.jpg" alt="book">
-                <h2> タイトル</h2>
-                <p>著者</p>
-                <p>出版社</p>
-                <p>発行年</p>
-                <p>テキスト</p>
-                <a href="#">オンラインストアで見る</a>
-            </div>
+        <div class="container">
+            <header id="header">
+                <h1 class="site-title">
+                    <a href="index.html">
+                        <img src="img/logo.svg" alt="PhotoShop">
+                    </a>
+                </h1>
+            </header>
+
+            <main>
+                <div id="mainvisual">
+                    <img src="img/mainvisual.jpg" alt="mainVisual">
+                </div>
+
+                <section id="index">
+                    <div class="inner">
+                        <h2 class="section-title">INDEX</h2>
+                        <ol class="index-list">
+                            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                            <li>タイトルタイトルタイトルタイトルタイトルタイトルタイトルタイトル</li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section id="detail">
+                    <div class="inner">
+                        <h2 class="section-title">DETAILS</h2>
+                        <div class="content">
+                            <img class="img" src="img/detail.jpg" alt="book">
+                            <div class="text">
+                                <p class="title">タイトルタイトルタイトル</p>
+                                <dl>
+                                    <dt>著者</dt>
+                                    <dd>タイトルタイトルタイトル</dd>
+                                    <dt>出版社</dt>
+                                    <dd>タイトルタイトルタイトル</dd>
+                                    <dt>発行年</dt>
+                                    <dd>タイトルタイトルタイトル</dd>
+                                </dl>
+                                <p>
+                                    テキストテキストテキストテキストテキストテキスト
+                                    テキストテキストテキストテキストテキストテキスト
+                                </p>
+                                <a class="link" href="#" target="_blank" rel="noopener noreferrer">オンラインストアで見る</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer">
+                <p class="inner">&copy; 2020 PhotoShop</p>
+            </footer>
         </div>
-        <footer>
-            <!-- cマーク -->
-            <p>&copy; 2020 PhotoShop</p>
-        </footer>
     </body>
-
-
 </html>
