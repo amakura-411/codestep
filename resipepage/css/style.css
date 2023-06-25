@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+html {
+    /* フォントの大きさを100%にする */
+    font-size: 100%;
+}
+
+body {
+    color: #2b2a27;
+    font-family: Helvetica Neue, Arial, Hiragino Sans, Meiryo, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    color:  #2b2a27;
+}
+
+.flex {
+    display: flex;
+    margin-bottom: 60px;
+}
+.flex .image {
+    width: 50%;
+}
+.flex .image img {
+    /* height: 700px; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.flex .recipe {
+    width: 50%;
+    padding:  40px 5% 0 5%;
+}
+.flex .recipe .recipe-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.flex .recipe .content-title {
+    border-bottom: solid 1px #ccc;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
+    margin: 40px 0 15px 0;
+}
+
+.flex .recipe .ingredient-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex .recipe dt {
+    width: 85%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+}
+.flex .recipe dd {
+    width: 15%;
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    text-align: right;
+}
+.flex .recipe .step-list li{
+    border-bottom: dotted 1px #ccc;
+    padding: 6px 0;
+    margin-left: 20px;
+}
+
+
+.btn {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.btn a {
+    display: inline-block;
+    border: solid 1px #2b2a27;
+    padding: 18px 60px;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.75rem;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+footer ul li {
+    list-style: none;
+    margin: 0 10px;
+}
+
+@media screen and (max-width: 834px) {
+    .flex {
+        flex-direction: column;
+    }
+    .flex .image {
+        width: 100%;
+    }
+    .flex .image img {
+        height: auto;
+    }
+    .flex .recipe {
+        width: 100%;
+    }
+}
