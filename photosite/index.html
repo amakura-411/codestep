@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <title>Photo Site</title>
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     </head>
     <body>
@@ -17,26 +17,34 @@
                 <div id="mainvisual">
                     <img src="img/mainvisual.jpg" alt="メインビジュアル">
                 </div>
-                <section id="Index">
-                    <h2 class="section-title">Index</h2>
+                <section id="index">
+                    <h2 class="section-title">INDEX</h2>
                     <div class="inner">
-                        <ul>
+                        <ol>
                             <li>1</li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
                             <li>5</li>
-                        </ul>
+                        </ol>
                     </div>
                 </section>
-                <section id="pictures">
+                <ul>
+                    <li>
                     <img src="img/photo1.jpg" alt="写真1">
-                    <img src="img/photo2.jpg" alt="写真2">
-                    <img src="img/photo3.jpg" alt="写真3">
-                    <img src="img/photo4.jpg" alt="写真4">
-                </section>
+                    </li>
+                    <li>
+                        <img src="img/photo2.jpg" alt="写真2">
+                    </li>
+                    <li>
+                        <img src="img/photo3.jpg" alt="写真3">
+                    </li>
+                    <li>
+                        <img src="img/photo4.jpg" alt="写真4">
+                    </li>
+                </ul>
                 <section id="detail">
-                    <h2 class="section-title">Detail</h2>
+                    <h2 class="section-title">DETAIL</h2>
                 </section>
                 <div class="content">
                     <dl>
@@ -47,15 +55,17 @@
                         <dt>発行日</dt>
                         <dd>発行日</dd>
                     </dl>
-                    <P>
-                        てきとう
-                        適当
-                    </P>
-                    <a class="link" href="#">オンラインストアで見る</a>
+                    <div class="description">
+                        <p>
+                            てきとう
+                            適当
+                        </p>
+                        <a class="link" href="#">オンラインストアで見る</a>
+                    </div>
                 </div>
             </main>
             <footer id="footer">
-                <h2>&copy; 2021 PHOTO BOOK2</h2>
+                <p>&copy; 2021 PHOTO BOOK2</p>
             </footer>
         </div>
     </body>
