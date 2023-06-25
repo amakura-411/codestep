@@ -3,45 +3,39 @@
     <head>
         <meta charset="utf-8">
         <title>レシピ一覧</title>
-        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="icon" href="img/favicon.ico">
     </head>
     <body>
         <main>
-            <div class="mainvisual">
+            <div id="mainvisual">
                     <img src="img/mainvisual.jpg" alt="mainVisual">
             </div>
 
-            <div id="content">
-                説明文
+            <div class="inner">
+                <h1>Recipe Dairy</h1>
+                <p>日々の料理レシピをまとめています。</p>
             </div>
 
             <ul>
-
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
             </ul>
 
             <!-- セクション？　レシピ一覧ページへの誘導 -->
-            <dic id="view">
-                <p>
-                    <a class="link" href="#" target="_blank" rel="#">レシピ一覧を見る</a>
-                </p>
+            <dic>
+                <a href="recipe/index.html">レシピ一覧</a>
             </dic>
         </main>
         <footer id="footer">
-            <!-- 横に３つ並んで link -->
-            <ul class="footer-list">
-                <li class="footer-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer">お問い合わせ</a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer">ご利用ガイド</a>
-                </li>
-                <li class="footer-item">
-                    <a href="#" target="_blank" rel="noopener noreferrer">サイトマップ</a>
-                </li>
+            <ul>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+                <li><a href="#">プライバシーポリシー</a></li>
             </ul>
-            <p>&copy; 2021 Recipe Dairy</p>
+            <p>&copy 2021 Recipe Dairy</p>
         </footer>
     </body>
 </html>
