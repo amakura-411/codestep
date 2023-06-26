@@ -16,7 +16,12 @@ a {
     text-decoration: none;
     color: black;
 }
-
+.content {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
 
 #mainVisual {
     margin-bottom: 80px;
@@ -59,6 +64,29 @@ a {
     max-width: 1920px;
     height: 420px;
     object-fit: cover;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+}
+
+#profile {
+    max-width: 100%;
+}
+
+
+dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+dd {
+    width: 30%;
+}
+dt {
+    width: 70%;
 }
 
 
