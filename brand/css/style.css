@@ -1,28 +1,62 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 html {
     font-size: 100%;
 }
 body {
     font-family: "Crimson Text", serif;
-    color: #333;
+    color: #2d2d2d;
 }
 img{
     max-width: 100%;
+    vertical-align: bottom;
+}
+ul {
+    list-style: none;
 }
 a {
-    color: #333;
-    border: none;
+    color: #2d2d2d;
+    text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
-    /* cssの適用範囲:767px以下の画面幅 */
-}
+
+
+
+
 
 #mainVisual{
     width: 90vw;
     margin: 4% auto;
 }
-#mainVisual img{
-    vertical-align: bottom;
+
+
+#header {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    padding: 32px 0;
+    margin: 0 auto 30px auto;
 }
+#header .site-title {
+    width: 110px;
+    line-height: 1px;
+    /* 自分の右側に余白をつける */
+    margin-right: 50px;
+}
+#header .site-title a {
+    display: block;
+}
+
+
+#header nav ul {
+    display: flex;
+}
+#header nav ul li {
+    font-size: 0.875rem;
+    margin-left: 30px;
+}
+#header nav ul li:first-child {
+    margin-left: 0;
+}
+
+
