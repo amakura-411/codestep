@@ -19,6 +19,16 @@ a {
     text-decoration: none;
 }
 
+.site-title {
+    width: 110px;
+    line-height: 1px;
+    /* 自分の右側に余白をつける */
+    margin-right: 50px;
+}
+.site-title a {
+    display: block;
+}
+
 
 
 #mainVisual{
@@ -34,16 +44,6 @@ a {
     padding: 32px 0;
     margin: 0 auto 30px auto;
 }
-#header .site-title {
-    width: 110px;
-    line-height: 1px;
-    /* 自分の右側に余白をつける */
-    margin-right: 50px;
-}
-#header .site-title a {
-    display: block;
-}
-
 
 #header nav ul {
     display: flex;
@@ -84,4 +84,18 @@ a {
 }
 .text p {
     margin-bottom: 25px;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.875rem;
+    padding: 20px;
+}
+#footer .logo {
+    width: 110px;
+}
+#footer p {
+
+    margin-left: auto;
 }
