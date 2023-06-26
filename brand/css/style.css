@@ -18,3 +18,11 @@ a {
 @media screen and (max-width: 767px) {
     /* cssの適用範囲:767px以下の画面幅 */
 }
+
+#mainVisual{
+    width: 90vw;
+    margin: 4% auto;
+}
+#mainVisual img{
+    vertical-align: bottom;
+}
