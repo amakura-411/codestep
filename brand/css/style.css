@@ -1,21 +1,20 @@
 @charset "utf-8";
 
 html {
-    font-size: 0.75rem;
+    font-size: 100%;
 }
 body {
     font-family: "Crimson Text", serif;
-    font-size: 1rem;
-    line-height: 1.5;
     color: #333;
-    background-color: #fff;
 }
-#mainVisual {
-    width: 90vh;
-    height: auto;
+img{
+    max-width: 100%;
+}
+a {
+    color: #333;
+    border: none;
 }
 
-
-section {
-    width: 1000px;
+@media screen and (max-width: 767px) {
+    /* cssの適用範囲:767px以下の画面幅 */
 }
