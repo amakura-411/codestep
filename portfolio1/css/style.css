@@ -90,6 +90,18 @@ dt {
 }
 
 
+#works ul {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#works ul li {
+    width: 30%;
+    margin-bottom: 23px;
+}
+
+
 
 @media screen and (max-width: 600px) {
     #header {
