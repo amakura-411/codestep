@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    color: #24292e;
+}
+img {
+    width: 100%;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+dl {
+    display: flex;
+    flex-wrap: wrap;
+}
+dt {
+    width: 20%;
+    text-align: center;
+}
+dd {
+    width: 80%;
+    text-align: left;
+}
+
+
+
+
+/* 共有 class */
+.flex {
+    display: flex;
+}
+
+
+.content {
+    max-width: 960px;
+    margin: 0 auto 130px auto;
+    font-size: 0.9rem;
+    padding: 0 4%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 45px;
+}
+
+
+
+/* header */
+
+#header {
+    max-width: 960px;
+    height: 270px;
+    align-items: center;
+    padding: 0 4%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#header nav ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header nav ul li {
+    font-size: 0.875rem;
+    margin-left: 30px;
+}
+#header nav ul li .icon {
+    width: 20px;
+}
+#header nav ul li:first-child {
+    margin-left: 0;
+}
+
+
+/* mainVisual */
+
+#mainVisual {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+#mainVisual img {
+    max-width: 1920px;
+    height: 420px;
+    object-fit: cover;
+}
+
+
+
+/* about */
+
+#profile {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+#works ul {
+    display: flex;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#works ul li {
+    width: 30%;
+    margin-bottom: 23px;
+}
+
+#news-list {
+    margin-bottom: 50px;
+    border-top: solid 1px #c8c8c8;
+}
+#news-list dt {
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+}
+#news-list dd {
+    border-bottom: solid 1px #c8c8c8;
+    padding: 15px;
+
+}
+
+
+
+#for dl {
+    width: 100%;
+}
+#form dd {
+    margin-bottom: 10px;
+
+}
+
+#form label {
+    vertical-align: middle;
+    display: inline-block;
+}
+#form input {
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+#form textarea{
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    padding: 10px;
+    height: 10rem;
+    resize: none;
+}
+#button {
+    text-align: center;
+}
+#button input {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 20px;
+    width: 75%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#footer {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.5rem;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+    }
+    #header {
+        max-width: 100%;
+        height: auto;
+    }
+    .site-title {
+        margin-top: 20px;
+    }
+    #header nav ul li {
+        font-size: 0.8rem;
+        margin-left: 20px;
+    }
+    dt {
+        width: 100%;
+        text-align: left;
+    }
+    dd {
+        width: 100%;
+        padding-bottom: 15px;
+    }
+
+    #works ul li {
+        width: 100%;
+    }
+    #news-list dt {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #news-list dd {
+        padding-top: 0;
+    }
+
+
+}
