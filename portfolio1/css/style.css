@@ -133,6 +133,44 @@ dd {
 
 
 
+#for dl {
+    width: 100%;
+}
+#form dd {
+    margin-bottom: 10px;
+
+}
+
+#form label {
+    vertical-align: middle;
+    display: inline-block;
+}
+#form input {
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+#form textarea{
+    border: 1px solid #c8c8c8;
+    width: 100%;
+    padding: 10px;
+    height: 10rem;
+    resize: none;
+}
+#button {
+    text-align: center;
+}
+#button input {
+    background-color: #24292e;
+    color: white;
+    padding: 10px 20px;
+    width: 75%;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .flex {
