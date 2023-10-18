@@ -1,6 +1,8 @@
 
 /* 共通部分 */
 * {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
 }
 img {
@@ -8,56 +10,71 @@ img {
     height: 100%;
 }
 section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
     margin-top: 80px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
 }
 span {
     display: block;
     font-size: 14px;
     line-height: 17px;
+    margin-bottom: 31px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
 }
 
 /* header */
 
-.header {
+.header{
     /* メインビジュアルだけ全幅 */
     width: 100vw;
     /* 高さはブラウザの高さにあわせて可変? */
     height: 600px;
     position: relative;
 }
-
 .header .main-visual-icon {
     /* 右上にはロゴを配置 */
     position: absolute;
     top: 30px;
     right: 30px;
+    /* サイズ */
     width: 120px;
     height: 40px;
 }
 
-main {
+
+/* inner */
+.inner {
+    width: 100%;
     /* コンテンツの最大横幅は1200px */
     max-width: 1200px; 
     /* 横のパディングは5% */
     padding-inline: 5%;
-    margin: auto;
 }
 
 
-#magazine .section-text {
-    width: 573px; 
-    text-align: center;
-    align-items: center;
+.section-text {
+    width: 100%;
+}
+
+/* magazine */
+.section-text span {
+    width: 552px;
     margin-inline: auto;
-    margin-bottom: 41px;
+    text-align: center;
 }
-#magazine .section-text h2 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: left;
-    margin-bottom: 23px;
-}
+
 #magazine .section-pic {
     display: flex;
     justify-content: space-between;
@@ -66,26 +83,57 @@ main {
 #magazine .picture  {
     width: 510px;
     height: 510px;
+}
+.picture {
     position: relative;
 }
-#magazine .section-pic .text {
+#magazine .picture #new {
+    margin-right: 80px;
+}
+#magazine .picture #archive {
+    margin-left: 80px;
+}
+.text {
     /* 画像の上に網掛けのテキストを重ねて配置 */
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.section-pic .text {
+    top: 50%;
     background: #70707080 0% 0% no-repeat padding-box;
     color: #fff;
-    text-align: center;
     width: 290px;
 }
-#magazine .section-pic .text h3 {
-    font: normal normal bold 20px/23px Arial;
+.section-pic .text h3 {
     margin-top: 15px;
-    margin-bottom: 5px;
 }
 #magazine .section-pic .text span {
-    margin-inline: 35px;
-    margin-bottom: 17px; 
-    width: 220px;
+    margin: 5px 35px 15px 35px;
+}
+
+
+#fashion {
+    margin-inline: 4px;
+    height: 520px;
+    position: relative;
+}
+#fashion .text {
+    top: 120px;
+}
+/* #fashion .picture {
+    width: 100vw;
+    height: 100%;
+} */
+/* #fashion .section-text {
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+.readmore {
+    padding: 17px 36px;
+    border: 1px solid #2A2A2A;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: transparent;
 }
