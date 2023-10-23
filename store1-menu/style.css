@@ -1,253 +1,236 @@
-
-/* 共通部分 */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, sans-serif;
+html {
+    font-size: 100%;
 }
-
+/* * -> body  */
+body {
+    font-family: "Arial", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+    font-size: 0.875rem;
+    color: #2a2a2a;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    opacity: 0.7;
+}
 img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
 }
-section {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    margin-block: 80px;
-}
-h2 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 23px;
-}
-span {
-    display: block;
-    font-size: 14px;
-    line-height: 17px;
-}
-.text span {
-    margin-bottom: 31px;
+li {
+    list-style: none;
 }
 
-h3 {
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 23px;
+/* inner -> wrapper */
+.wrapper {
+    /* コンテンツの最大横幅は1200px */
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding-inline: 5%;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.readmore {
+    color: #2A2A2A;
+    display: inline-block;
+    font-size: 0.750rem;
+    padding: 14px 36px;
+    margin-top: 30px;
+    border: 1px solid #2A2A2A;
 }
 
 /* header */
 
 .header{
-    /* メインビジュアルだけ全幅 */
-    width: 100vw;
     /* 高さはブラウザの高さにあわせて可変? */
-    height: 600px;
+    height: 100vh;
+    background-image: url(img/mainvisual.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
     position: relative;
 }
-.header .main-visual-icon {
+.header .main-visual {
     /* 右上にはロゴを配置 */
     position: absolute;
     top: 30px;
     right: 30px;
-    /* サイズ */
-    width: 120px;
-    height: 40px;
-}
-.logo img {
-    /* サイズ */
-    width: 120px;
-    height: 40px;
 }
 
 
-/* inner */
-.inner {
-    width: 100%;
-    /* コンテンツの最大横幅は1200px */
-    max-width: 1200px; 
-    /* 横のパディングは5% */
-    padding-inline: 5%;
-}
-
-
-.section-text {
-    width: 100%;
-}
-
-/* magazine */
-.section-text span {
-    margin-inline: auto;
+/*-------------------------------------------
+Magazine
+-------------------------------------------*/
+#magazine {
     text-align: center;
+    margin-bottom: 80px;
 }
 
-#magazine .section-pic {
+#magazine .flex-item {
     display: flex;
     justify-content: space-between;
-    margin-top: 41px;
-    align-items: center;
+    margin-top: 40px;
 }
-#magazine .picture  {
-    max-width: 510px;
-    max-height: 510px;
-}
-.relative-picture {
+#magazine  .flex-item .item {
+    width: 49%;
     position: relative;
 }
-
-
-#magazine .picture #new {
-    margin-right: 80px;
-}
-#magazine .picture #archive {
-    margin-left: 80px;
-}
-.absolute-text {
-    /* 画像の上に網掛けのテキストを重ねて配置 */
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.section-pic .text {
-    top: 50%;
-    background: #70707080 0% 0% no-repeat padding-box;
+#magazine .flex-item .item .text {
+    max-width: 290px;
     color: #fff;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
 }
-.section-pic .text h3 {
-    margin-top: 15px;
-}
-#magazine .section-pic .text span {
-    margin: 5px 35px 15px 35px;
+#magazine .flex-item .item .title {
+    font-size: 1.25rem;
+    margin-bottom: 2px;
 }
 
+/*-------------------------------------------
+Fashion
+-------------------------------------------*/
 
 #fashion {
-    margin-inline: 4px;
-    height: fit-content;
-    /* height: 520px; */
-    padding-bottom: 60px;
-    position: relative;
-}
-#fashion .text {
-    top: 120px;
-}
-#fashion .text > span {
-    margin-inline: auto;
-}
-
-.readmore {
-    width: fit-content;
-    margin-bottom: 60px;
-    padding: 17px 36px 15px 37px ;
-    border: 1px solid #2A2A2A;
-    font-size: 12px;
-    line-height: 14px;
-    background-color: transparent;
-}
-
-#catalogantique {
-    background: #F5F5F5 0% 0% no-repeat padding-box;
-    width: 100vw;
+    height: 520px;
+    background-image: url(img/fashion.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 80px;
 }
 
 
 
-#catalogantique .picture img{
-    max-width: 500px;
-    max-height: 500px;
+/*-------------------------------------------
+Catalog & Antique
+-------------------------------------------*/
+.catalog-antique {
+    background-color: #F5F5F5;
+    padding-block: 60px;
 }
-.catalog, .antique {
+.catalog-antique .section-title{
+    margin-bottom: 40px;
+}
+
+.catalog-antique .flex-item{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-block: 60px;
 }
-.catalog img {
-    width: 100%
-}
-.antique {
-    margin-top: 120px;
-}
-
-#catalogantique .text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.readmore span {
-    margin: 0;
-}
-
-.footer {
-    background: #333333 0% 0% no-repeat padding-box;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-}
-.footer  .inner {
-    display: flex;
+.catalog-antique .flex-item .item {
+    width: 48%;
     text-align: center;
-    align-items: center;
-    margin-inline: auto;
 }
-
-/* 小要素を３等分する */
-.footer .logo  {
-    width: calc(100% / 3);
+.catalog-antique .flex-item .item img {
+    width: 100%;
 }
-
-.footer .text .list, .footer .text .detail {
-    width: calc(100% / 2)
-}
-.footer .inner .text {
-    display: flex;
-}
-.footer  .inner .logo {
-    /* 左よせ */
+.catalog-antique .flex-item .item p {
+    margin-bottom: 30px;
     text-align: left;
 }
-.footer  h3 {
-    margin-bottom: 14px;
-}
-.footer-nav {
-    height: 73px;
-    margin-inline: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.catalog-antique .flex-item .item p:last-child {
+    margin-bottom: 0;
 }
 
+/*-------------------------------------------
+フッター
+-------------------------------------------*/
+
+.footer {
+    background-color: #333;
+    font-size: 0.750rem;
+}
+.footer .flex-item {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    padding-block: 100px;
+}
+.footer .flex-item .item {
+    width: calc(100% / 3);
+    line-height: 2;
+}
+.footer .flex-item .item:first-child {
+    padding-block: 60px;
+}
+.footer .flex-item .item li::before {
+    content: "-";
+    margin-right: 5px;
+}
+.footer .item .title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.footer .copyright {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+
 @media screen and (max-width: 896px) {
-    .catalog, .antique {
+/*-------------------------------------------
+    Magazine
+-------------------------------------------*/
+    #magazine .flex-item{
         flex-direction: column;
-        /* margin-inline: 2%; */
     }
-    .section-pic {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .footer {
-        padding-block: 64px;
-    }
-    .footer  .inner  {
-        flex-direction: column;
-        gap: 35px;
-    }
-    .footer  .inner > * {
+    #magazine .flex-item .item {
         width: 100%;
     }
-    .footer .inner .logo {
+    #magazine .flex-item .item:first-child {
+        margin-bottom: 30px;
+    }
+/*-------------------------------------------
+    Fashion
+-------------------------------------------*/
+
+#fashion {
+    padding-top: 35px;
+    margin-bottom: 50px;
+}
+  /*-------------------------------------------
+  Catalog & Antique
+  -------------------------------------------*/
+    .catalog-antique {
+        padding: 30px 0;
+    }
+    .catalog-antique .flex-item {
+        flex-direction: column;
+    }
+    .catalog-antique .flex-item .item {
+        width: 100%;
+    }
+    .catalog-antique .flex-item .item:first-child {
+        margin-bottom: 60px;
+    }
+  /*-------------------------------------------
+  フッター
+  -------------------------------------------*/
+    .footer .flex-item {
+        flex-direction: column;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footer .item {
+        width: 100%!important;
+        margin-bottom: 30px;
+    }
+    .footer .item:first-child {
         text-align: center;
-        align-items: center;
-    }
-    .text {
-        flex-direction: column;
-        gap: 35px
-    }
-    .footer .text > * {
-        width: 100%;
+        padding: 0!important;
     }
 }
